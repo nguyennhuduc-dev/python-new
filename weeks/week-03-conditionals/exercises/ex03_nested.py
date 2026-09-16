@@ -58,4 +58,4 @@ if tuoi < 12 or tuoi >= 65:
     gia_co_ban *= 0.5
 elif tuoi >= 18 and tuoi <= 25:
     gia_co_ban *= 0.8
-print(f"gia ve cuopi cung: {gia_co_ban:.0f} VND")
+print(f"gia ve cuoi cung: {gia_co_ban:.0f} VND")
