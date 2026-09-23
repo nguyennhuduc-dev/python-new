@@ -43,3 +43,13 @@ else:
 # "abc" với shift=3 → "def"
 string = input("Nhap chuoi: ")
 shift = int(input("Nhap so buoc dich: "))
+
+result = ""
+for char in string:
+    if char.isalpha():
+        base = ord('a') if char.islower() else ord('A')
+        result += chr((ord(char) - base + shift) % 26 + base)
+    else:
+        result += char
+
+print(f"Chuoi ma hoa: {result}")
